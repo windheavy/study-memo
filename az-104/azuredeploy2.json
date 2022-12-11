@@ -4,6 +4,19 @@
     "parameters": {},
     "functions": [],
     "variables": {},
-    "resources": [storage],
+    "resources": [{
+        "name": "storageaccountfcc",
+        "type": "Microsoft.Storage/storageAccounts",
+        "apiVersion": "2021-04-01",
+        "tags": {
+            "displayName": "storageaccountfcc"
+        },
+        "location": "[resourceGroup().location]",
+        "kind": "StorageV2",
+        "sku": {
+            "name": "Standard_LRS",
+            "tier": "Standard"
+        }
+    }],
     "outputs": {}
 }
